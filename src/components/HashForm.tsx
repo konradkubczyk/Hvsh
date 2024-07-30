@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import {calculateHash} from "../utils/crypto.ts";
+import ResultField from "./ResultField.tsx";
 
 export default function HashForm() {
     const availableAlgorithms = [
@@ -46,9 +47,7 @@ export default function HashForm() {
                     ></textarea>
                 </div>
             </form>
-            <p id="result">
-                {hash}
-            </p>
+            <ResultField hash={hash}/>
         </>
     );
 }
