@@ -1,12 +1,11 @@
 import './App.css'
 import HashForm from './components/HashForm.tsx';
-import NoisyContainer from "./components/NoisyContainer.tsx";
 import bgImage from './assets/bg.png'
 
 function App() {
     return (
-        <div className="content-wrapper" style={{backgroundImage: `url(${bgImage})`}}>
-            <NoisyContainer>
+        <div className="canvas" style={{backgroundImage: `url(${bgImage})`}}>
+            <div className="content-wrapper">
                 <main id="home">
                     <div id="intro">
                         <h1>h<span className="logo-v">v</span>sh</h1>
@@ -16,7 +15,7 @@ function App() {
                     </div>
                     <HashForm/>
                 </main>
-            </NoisyContainer>
+            </div>
         </div>
     )
 }
