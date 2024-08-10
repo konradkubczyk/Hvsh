@@ -2,6 +2,11 @@
     width: 100%;
 }
 
+.content-wrapper {
+    background-size: cover;
+    background-position: center;
+}
+
 #home {
     margin: 0 auto;
     width: min(700px, 85%);

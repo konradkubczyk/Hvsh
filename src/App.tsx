@@ -1,9 +1,11 @@
 import './App.css'
 import HashForm from './components/HashForm.tsx';
 import NoisyContainer from "./components/NoisyContainer.tsx";
+import bgImage from './assets/bg.png'
 
 function App() {
     return (
+        <div className="content-wrapper" style={{ backgroundImage: `url(${bgImage})`}}>
         <NoisyContainer>
             <main id="home">
                 <div id="intro">
@@ -15,6 +17,7 @@ function App() {
                 <HashForm/>
             </main>
         </NoisyContainer>
+        </div>
     )
 }
 

@@ -15,9 +15,6 @@
 
 body {
     margin: 0;
-    background-image: url("bg.png");
-    background-size: cover;
-    background-position: center;
 }
 
 h1 {
