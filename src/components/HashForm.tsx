@@ -9,8 +9,9 @@ export default function HashForm() {
         'SHA-384',
         'SHA-512'
     ];
+    const DEFAULT_ALGORITHM = 1;
 
-    const [algorithm, setAlgorithm] = useState(availableAlgorithms[0]);
+    const [algorithm, setAlgorithm] = useState(availableAlgorithms[DEFAULT_ALGORITHM]);
     const [text, setText] = useState('');
     const [hash, setHash] = useState('');
 
@@ -34,7 +35,7 @@ export default function HashForm() {
                         onChange={e => setAlgorithm(e.target.value)}
                     >
                         {availableAlgorithms.map(algorithm =>
-                            <option key={algorithm}>{algorithm}</option>
+                            <option key={algorithm} selected={algorithm === availableAlgorithms[DEFAULT_ALGORITHM]}>{algorithm}</option>
                         )}
                     </select>
                 </div>
